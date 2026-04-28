@@ -93,6 +93,22 @@ p { margin: 0 0 14px; color: #353843; }
   font-family: 'Space Grotesk', 'Manrope', sans-serif;
   font-weight: 700;
   letter-spacing: .2px;
+.brand__badge {
+  width: 46px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(from 20deg, var(--teal), #7ae8e8, var(--pink), #ffc3df, var(--yellow), var(--teal));
+  padding: 3px;
+}
+.brand__badge::before {
+  content: '⚡';
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 1.2rem;
 }
 .nav { display: flex; gap: 10px; }
 .nav a {
@@ -160,6 +176,15 @@ p { margin: 0 0 14px; color: #353843; }
   border-radius: 12px;
   max-height: 250px;
   object-fit: cover;
+.doodles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.doodle {
+  background: #fff;
+  border: 2px dashed #e4e7ec;
+  border-radius: 14px;
+  min-height: 82px;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
 }
 
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
