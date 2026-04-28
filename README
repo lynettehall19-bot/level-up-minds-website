@@ -1,0 +1,35 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/README.md b/README.md
+index f31b855c0c2f30357c4e25dc0cc735dfd924449f..d8ecb16d6177d4ea6a746a042f4724730e19718a 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,24 @@
+-# level-up-minds-website
+-Website for Level Up Minds educational resources and digital products.
++# Level Up Minds Website
++
++Bright, modern multi-page educational e-commerce website prototype for Level Up Minds.
++
++## Run locally
++
++```bash
++python3 -m http.server 4173
++```
++
++Then open `http://localhost:4173`.
++
++## Pages
++
++- Home: `index.html`
++- Shop/Resources: `shop.html`
++- About: `about.html`
++- Contact: `contact.html`
++- Blog/Tips: `blog.html`
++
++## Notes
++
++- Payhip links are wired as placeholders to `https://payhip.com`.
++- Newsletter and contact forms are UI-only placeholders for integration.
+ 
+EOF
+)
